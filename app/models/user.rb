@@ -7,8 +7,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  # take the half of a user's email before the @ in their email and set as username
   def name
     email.split('@')[0]
   end
-  
+
 end
