@@ -7,7 +7,6 @@ class User < ApplicationRecord
   has_many :chat_rooms, dependent: :destroy
   has_many :messages, dependent: :destroy
 
-  # take the half of a user's email before the @ in their email and set as username
   def name
     email.split('@')[0]
   end
