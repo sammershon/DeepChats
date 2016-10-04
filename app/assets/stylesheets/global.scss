@@ -6,17 +6,18 @@
 }
 
 .navbar {
-  background-color: #16a085;
+  background-color: #727070;
 }
 
 .btn {
-  background-color: #16a085;
+  background-color: #e5ba83;
   outline: none;
 }
 
 h1 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  font-size: 80px;
 }
 
 #messages {
@@ -29,4 +30,28 @@ h1 {
 
 footer {
   margin-top: 50px;
+}
+
+#title {
+  margin-top: 80px;
+  text-align: center;
+  color: black;
+}
+
+#sub {
+  text-align: center;
+  color: black;
+}
+
+.jumbotron {
+  margin-top: 80px;
+  background-color: rgba(117, 113, 109, 0.0);
+}
+
+#bg {
+  background-image: url('http://usersthink.com/wp-content/uploads/37-usersthink-stock-image.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

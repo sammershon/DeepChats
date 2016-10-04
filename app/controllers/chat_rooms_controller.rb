@@ -1,6 +1,7 @@
 class ChatRoomsController < ApplicationController
+  before_action :authenticate_user!
   def index
-    @chat_rooms = ChatRoom.all
+    @chat_rooms = ChatRoom.all.order(created_at: :desc)
   end
 
   def new
@@ -25,6 +26,6 @@ class ChatRoomsController < ApplicationController
   private
 
   def chat_room_params
-    params.require(:chat_room).permit(:title)
+    params.require(:chat_room).permit(:title, :question)
   end
 end
