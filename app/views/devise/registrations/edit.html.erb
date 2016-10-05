@@ -4,6 +4,26 @@
   <%= devise_error_messages! %>
 
   <div class="form-group">
+    <%= f.label :philosophical_paradigm %>
+    <%= f.text_field :paradigm, autofocus: true, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :favorite_quote %>
+    <%= f.text_field :quote, autofocus: true, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :favorite_book %>
+    <%= f.text_field :book, autofocus: true, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :age %>
+    <%= f.text_field :age, autofocus: true, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
     <%= f.label :first_name %>
     <%= f.text_field :first_name, autofocus: true, class: 'form-control' %>
   </div>
@@ -19,8 +39,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, class: 'form-control' %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -29,26 +49,26 @@
 
   <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
+    <%= f.password_field :current_password, autocomplete: "off", class: 'form-control' %>
   </div>
-
+  <br />
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Update my profile", class: 'btn'%>
   </div>
 <% end %>
-
+<br />
 <h3>Cancel my account</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p>We'll miss you! <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn' %></p>
 
 <%= link_to "Back", :back %>

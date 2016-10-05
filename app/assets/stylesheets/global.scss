@@ -6,12 +6,13 @@
 }
 
 .navbar {
-  background-color: #727070;
+  background-color: #3e174c;
 }
 
 .btn {
-  background-color: #e5ba83;
-  outline: none;
+  background-color: #3e174c;
+  color: white;
+  border: none;
 }
 
 h1 {
@@ -35,17 +36,17 @@ footer {
 #title {
   margin-top: 80px;
   text-align: center;
-  color: grey;
+  color: black;
 }
 
 #sub {
   text-align: center;
-  color: grey;
+  color: black;
 }
 
 .jumbotron {
   margin-top: 80px;
-  background-color: rgba(117, 113, 109, 0.0);
+  background: rgba(114, 112, 112, 0.5);
 }
 
 #bg {
@@ -54,4 +55,12 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.userProf {
+  font-size: 35px;
+}
+
+#authBtns {
+
 }

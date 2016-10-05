@@ -1,16 +1,20 @@
 <% provide(:title, 'Home') %>
 <html>
-  <body id='bg'>
-      <div id='home'>
-        <h1 id='title'>Welcome to DeepChats</h1>
-        <h3 id='sub'>Subtitle goes here</h3>
-        <br/>
-        <div id='authBtns'>
-        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-large btn-primary" %>
-        <%= link_to "Log in",      new_user_session_path,      class: "btn btn-large btn-primary" %>
+  <body id="bg">
+      <div id="home">
+        <div class="jumbotron">
+          <h1 id="title">Welcome to DeepChats</h1>
+          <h3 id="sub">Subtitle goes here</h3>
         </div>
-        <div id='enterChat'>
-        <%= link_to "Enter a chat now!", chat_rooms_path, class: "btn btn-large btn-primary" %>
+        <br/>
+        <div id="homebtns">
+          <div id="authBtns center-block">
+            <%= link_to "Register", new_user_registration_path, class: "btn btn-large btn-primary" %>
+            <%= link_to "Log in",  new_user_session_path,      class: "btn btn-large btn-primary" %>
+          </div>
+          <div id="enterChat">
+            <%= link_to "Enter a chat now!", chat_rooms_path, class: "btn btn-large btn-primary" %>
+          </div>
         </div>
     </div>
   </body>
