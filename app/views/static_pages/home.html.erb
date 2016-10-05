@@ -1,21 +1,21 @@
 <% provide(:title, 'Home') %>
 <html>
-  <body id="bg">
-      <div id="home">
-        <div class="jumbotron">
-          <h1 id="title">Welcome to DeepChats</h1>
-          <h3 id="sub">Subtitle goes here</h3>
+    <body id="bg2">
+        <div id="home">
+            <div class="jumbotron">
+                <h1 id="title">Welcome to DeepChats</h1>
+                <h3 id="sub">Subtitle goes here</h3>
+                <div id="authBtns">
+                    <% if signed_in? %>
+                    <%= link_to "Enter a chat now!", chat_rooms_path, class: "btn btn-large btn-primary" %>
+                <% else %>
+                    <%= link_to "Register", new_user_registration_path, class: "btn btn-large btn-primary unauth" %>
+                    <%= link_to "Log in",  new_user_session_path,      class: "btn btn-large btn-primary unauth" %>
+                    <% end %>
+                </div>
+            </div>
+            <br/>
         </div>
-        <br/>
-        <div id="homebtns">
-          <div id="authBtns center-block">
-            <%= link_to "Register", new_user_registration_path, class: "btn btn-large btn-primary" %>
-            <%= link_to "Log in",  new_user_session_path,      class: "btn btn-large btn-primary" %>
-          </div>
-          <div id="enterChat">
-            <%= link_to "Enter a chat now!", chat_rooms_path, class: "btn btn-large btn-primary" %>
-          </div>
-        </div>
-    </div>
-  </body>
+
+    </body>
 </html>

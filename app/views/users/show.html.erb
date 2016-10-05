@@ -1,12 +1,32 @@
-<h1><%= @user.username %></h1>
-<h4>Username: <%= @user.username %></h4>
-<h4>Name: <%= @user.first_name %> <%= @user.last_name %></h4>
-<h4>Email: <%= @user.email %></h4>
-<h4>Age: <%= @user.age %></h4>
-<h4>Philosophy: <%= @user.paradigm %></h4>
-<h4>Favorite Quote: <%= @user.quote %></h4>
-<h4>Faorite Book: <%= @user.book %></h4>
-
-
-
-<%= link_to 'Edit My Profile', edit_user_registration_path %>
+<body id="bg2">
+    <div class="well profile">
+        <h1><%= @user.username %></h1>
+        <h4>Username:
+            <span class="profileInfo"><%= @user.username %></span>
+        </h4>
+        <h4>Name:
+            <span class="profileInfo"><%= @user.first_name %>
+                <%= @user.last_name %></span>
+        </h4>
+        <h4>Email:
+            <span class="profileInfo"><%= @user.email %></span>
+        </h4>
+        <h4>Age:
+            <span class="profileInfo"><%= @user.age %></span>
+        </h4>
+        <h4>Philosophy:
+            <span class="profileInfo"><%= @user.paradigm %></span>
+        </h4>
+        <h4>Favorite Quote:
+            <span class="profileInfo"><%= @user.quote %></span>
+        </h4>
+        <h4>Favorite Book:
+            <span class="profileInfo"><%= @user.book %></span>
+        </h4>
+        <br/>
+        <div class="profileBtns">
+            <%= link_to 'Edit My Profile', edit_user_registration_path, class: 'btn btn-primary prof' %>
+            <%= link_to 'View all profiles', users_path, class: 'btn btn-primary prof' %>
+        </div>
+    </div>
+</body>

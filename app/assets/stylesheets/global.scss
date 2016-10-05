@@ -9,6 +9,14 @@
   background-color: #3e174c;
 }
 
+.card {
+  background-color: lightgrey;
+}
+
+.card-text {
+  padding-left: 20px;
+}
+
 .btn {
   background-color: #3e174c;
   color: white;
@@ -16,16 +24,16 @@
 }
 
 h1 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
   font-size: 80px;
 }
 
 #messages {
-  max-height: 450px;
+  max-height: 400px;
   overflow-y: auto;
   .avatar {
-    margin: 0.5rem;
+    margin: 20px;
   }
 }
 
@@ -46,7 +54,8 @@ footer {
 
 .jumbotron {
   margin-top: 80px;
-  background: rgba(114, 112, 112, 0.5);
+  padding: 35px;
+  background: rgba(211, 211, 211, .9);
 }
 
 #bg {
@@ -57,10 +66,74 @@ footer {
   background-size: cover;
 }
 
+#bg2 {
+  background-image: url('http://usersthink.com/wp-content/uploads/17-usersthink-stock-image.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#bg3 {
+  background-image: url('http://usersthink.com/wp-content/uploads/29-usersthink-stock-image.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#bg4 {
+  background-image: url('http://usersthink.com/wp-content/uploads/91-usersthink-stock-image.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .userProf {
   font-size: 35px;
 }
 
-#authBtns {
+.profileInfo {
+  font-size: 21px;
+}
 
+#homeBtns {
+  display: flex;
+}
+
+#authBtns {
+  width: 235px;
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.unauth {
+  margin: 15px;
+}
+
+.chatIndex {
+  font-size: 25px;
+}
+
+.well {
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding: 15px;
+  background: rgba(211, 211, 211, .92);
+}
+
+.profile {
+  margin-top: 45px;
+  padding-left: 80px;
+  padding-bottom: 30px;
+}
+
+.profileBtns {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.prof {
+  margin: 15px;
 }

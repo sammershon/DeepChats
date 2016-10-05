@@ -1,5 +1,13 @@
-<% @users.each do |user| %>
-  <p><span class='userProf'><%= user.username %></span>
-  <%= link_to '- View Profile', user_path(user.username) %></p><br/>
-  <br/>
+<body id="bg3">
+    <h1>User List</h1>
+    <h3>Meet your fellow philosophers!</h3>
+    <br/>
+    <% @users.each do |user| %>
+    <div class="well well-lg">
+    <li>
+        <span class='userProf'><%= user.username %></span>
+        <%= link_to '- View Profile', user_path(user.username) %></li>
+</div>
+<br/>
 <% end %>
+</body>
