@@ -40,12 +40,12 @@
 
 .card {
   background-color: lightgrey;
-  height: 75px;
+  height: 55px;
 }
 
-/*.card-text {
-  padding-left: 5px;
-}*/
+.card-block {
+  padding: 10px;
+}
 
 .question {
   display: inline;
@@ -59,6 +59,7 @@
   background-color: #3e174c;
   color: white;
   border: none;
+  font-family: 'Averia Serif Libre', cursive;
 }
 
 h1 {
@@ -70,9 +71,6 @@ h1 {
 #messages {
   max-height: 375px;
   overflow-y: auto;
-  .avatar {
-    margin: 20px;
-  }
 }
 
 footer {
@@ -207,6 +205,7 @@ footer {
   text-align: center;
   font-family: 'Averia Serif Libre', cursive;
 }
+
 .chat-index {
   background: rgba(211, 211, 211, .8);
   margin: 0 auto;
@@ -222,13 +221,14 @@ footer {
 }
 
 .room {
-  text-decoration: none;
+  text-decoration: inherit;
+  font-family: 'Averia Serif Libre', cursive;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .profileBtns {
-  width: 450px;
+  width: 360px;
   margin: 0 auto;
 }
 
@@ -258,6 +258,7 @@ footer {
 #user {
   background: rgba(211, 211, 211, .8);
   font-size: 25px;
+  font-family: 'Averia Serif Libre', cursive;
   vertical-align: middle;
   text-align: left;
   width: 425px;
@@ -268,4 +269,14 @@ footer {
 
 #users {
   text-align: center;
+}
+
+#tech {
+  list-style-type: none;
+  font-size: 25px;
+}
+
+.username {
+  font-size: 22px;
+  font-family: 'Averia Serif Libre', cursive;
 }
