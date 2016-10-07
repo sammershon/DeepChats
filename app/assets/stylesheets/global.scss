@@ -1,20 +1,58 @@
 .navbar-nav .nav-item span {
   display: block;
-  padding-bottom: 0.425rem;
-  padding-top: 0.425rem;
+  padding: 0 10px;
   color: white;
 }
 
 .navbar {
-  background-color: #3e174c;
+  background-color: #381544;
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 22px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.left-nav-items {
+  font-size: 22px;
+  padding-top: 12px;
+}
+
+.lead {
+  text-align: center;
+  text-decoration: none;
+}
+
+#title {
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 80px;
+}
+
+#sub {
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 30px;
+}
+
+#chat-container {
+  margin-top: 55px;
 }
 
 .card {
   background-color: lightgrey;
+  height: 75px;
 }
 
-.card-text {
-  padding-left: 20px;
+/*.card-text {
+  padding-left: 5px;
+}*/
+
+.question {
+  display: inline;
+}
+
+#question-container {
+  margin-bottom: 15px;
 }
 
 .btn {
@@ -26,11 +64,11 @@
 h1 {
   margin-top: 24px;
   margin-bottom: 24px;
-  font-size: 80px;
+  //font-size: 80px;
 }
 
 #messages {
-  max-height: 400px;
+  max-height: 375px;
   overflow-y: auto;
   .avatar {
     margin: 20px;
@@ -38,7 +76,11 @@ h1 {
 }
 
 footer {
-  margin-top: 50px;
+  position: static;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
 }
 
 #title {
@@ -47,27 +89,39 @@ footer {
   color: black;
 }
 
+#enter-chat {
+  width: 575px;
+  margin: 0 auto;
+}
+
+#new {
+  width: 350px;
+  margin-right: 300px;
+}
+
+.new-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+#register-info {
+  text-align: center;
+}
+
 #sub {
   text-align: center;
   color: black;
 }
 
 .jumbotron {
-  margin-top: 80px;
+  margin-top: 65px;
   padding: 35px;
   background: rgba(211, 211, 211, .9);
 }
 
-#bg {
-  background-image: url('https://lmgranados.files.wordpress.com/2011/04/zenrockstack1.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 #bg2 {
-  background-image: url('http://usersthink.com/wp-content/uploads/17-usersthink-stock-image.jpg');
+  background-image: url('library.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -75,7 +129,7 @@ footer {
 }
 
 #bg3 {
-  background-image: url('http://usersthink.com/wp-content/uploads/29-usersthink-stock-image.jpg');
+  background-image: url('books.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -83,7 +137,23 @@ footer {
 }
 
 #bg4 {
-  background-image: url('http://usersthink.com/wp-content/uploads/91-usersthink-stock-image.jpg');
+  background-image: url('stars.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#bg5 {
+  background-image: url('table.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#bg6 {
+  background-image: url('bulbs.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -92,6 +162,10 @@ footer {
 
 .userProf {
   font-size: 35px;
+}
+
+.user-list {
+  text-align: center;
 }
 
 .profileInfo {
@@ -103,9 +177,9 @@ footer {
 }
 
 #authBtns {
-  width: 235px;
-  margin: 0 auto;
+  margin-left: 370px;
   padding: 28px 0;
+  color: inherit;
 }
 
 .unauth {
@@ -114,19 +188,43 @@ footer {
 
 .chatIndex {
   font-size: 25px;
+  font-family: 'Averia Serif Libre', cursive;
 }
 
 .well {
-  background-color: lightgrey;
   border-radius: 10px;
   padding: 15px;
-  background: rgba(211, 211, 211, .92);
+  background: rgba(211, 211, 211, .8);
 }
 
 .profile {
-  margin-top: 45px;
-  padding-left: 80px;
-  padding-bottom: 30px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  padding: 55px 80px 30px 80px;
+}
+
+.description {
+  text-align: center;
+  font-family: 'Averia Serif Libre', cursive;
+}
+.chat-index {
+  background: rgba(211, 211, 211, .8);
+  margin: 0 auto;
+  padding-top: 20px;
+  border-radius: 10px;
+  width: 800px;
+  margin-top: 40px;
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+.chat-single {
+  margin-top: 10px;
+}
+
+.room {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 .profileBtns {
@@ -136,4 +234,38 @@ footer {
 
 .prof {
   margin: 15px;
+}
+
+.food {
+  font-family: 'Averia Serif Libre', cursive;
+  height: 110px;
+  margin-top: 65px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+ #thought {
+  padding-left: 80px;
+}
+
+.btn-xlarge {
+  padding: 18px 28px;
+  font-size: 20px; //change this to your desired size
+  line-height: normal;
+  border-radius: 8px;
+}
+
+#user {
+  background: rgba(211, 211, 211, .8);
+  font-size: 25px;
+  vertical-align: middle;
+  text-align: left;
+  width: 425px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#users {
+  text-align: center;
 }

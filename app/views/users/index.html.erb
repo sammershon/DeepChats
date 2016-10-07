@@ -1,13 +1,18 @@
 <body id="bg3">
-    <h1>User List</h1>
-    <h3>Meet your fellow philosophers!</h3>
-    <br/>
+  <div class="well profile description">
+    <h1 class="user-list">User List</h1>
+    <h3 class="user-list">Meet your fellow philosophers!</h3>
+  </div>
+  <br/>
+  <div id="users">
     <% @users.each do |user| %>
-    <div class="well well-lg">
-    <li>
-        <span class='userProf'><%= user.username %></span>
-        <%= link_to '- View Profile', user_path(user.username) %></li>
-</div>
-<br/>
-<% end %>
+      <div class="well" id="user">
+        <li>
+          <strong><%= user.username %></strong>
+          <%= link_to '- View Profile', user_path(user.username) %>
+        </li>
+      </div>
+      <br/>
+  </div>
+    <% end %>
 </body>

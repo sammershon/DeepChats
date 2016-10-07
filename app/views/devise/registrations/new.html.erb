@@ -1,10 +1,10 @@
-<body id="bg2">
-    <div class="well">
-        <h1>Register</h1>
-
-        <h5>
-            After logging in you may add further information to your profile by clicking "View Profile" and selecting "Edit"
-        </h5>
+<body id="bg5">
+    <div class="well profile">
+        <h1 class="new-title"><strong>Register</strong></h1>
+        <div id="register-info">
+        <h5>Please fill out some information about yourself</h5>
+        <h6>You can change these fields later by going to "My Profile" and selecting "Edit"</h6>
+        </div>
         <br/>
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= devise_error_messages! %>

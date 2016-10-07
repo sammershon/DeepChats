@@ -4,18 +4,24 @@
         <div id="home">
             <div class="jumbotron">
                 <h1 id="title">Welcome to DeepChats</h1>
-                <h3 id="sub">Subtitle goes here</h3>
+                <h3 id="sub">Where contemplation meets conversation</h3>
                 <div id="authBtns">
-                    <% if signed_in? %>
-                    <%= link_to "Enter a chat now!", chat_rooms_path, class: "btn btn-large btn-primary" %>
-                <% else %>
-                    <%= link_to "Register", new_user_registration_path, class: "btn btn-large btn-primary unauth" %>
-                    <%= link_to "Log in",  new_user_session_path,      class: "btn btn-large btn-primary unauth" %>
-                    <% end %>
+                  <% if signed_in? %>
+                    <div id="enter-chat">
+                      <%= link_to "Join a chat now!", chat_rooms_path, class: "btn btn-xlarge" %>
+                    </div>
+                  <% else %>
+                  <div id="new">
+                    <%= link_to "Register", new_user_registration_path, class: "btn btn-xlarge unauth" %>
+                    <%= link_to "Log in",  new_user_session_path,      class: "btn btn-xlarge unauth" %>
+                  </div>
+                  <% end %>
                 </div>
             </div>
-            <br/>
         </div>
-
+        <div class="well food">
+          <h4>Food for thought:</h4>
+            <h5 id="thought"><%= @thought %></h5>
+        </div>
     </body>
 </html>

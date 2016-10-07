@@ -15,7 +15,7 @@ class ChatRoomsController < ApplicationController
                       "Is mathematics the same as logic?", "Does every event have a cause?", "Are you your body or your mind?", "Can wars ever be just?", "Are you the same person you were ten years ago?", "Why do we dream?",
                       "Can something be at two places at the same time?", "If you go back in time and teach young Einstein relativity theory, where does the idea come from?", "Does every event have a cause?", "How do you know you are not dreaming right now?",
                       "If we live in a computer simulation, does it make a difference to the meaning of life?", "If meat can be grown using stem cells, is there any reason not to eat meat?", "Is it the main purpose of law to promote morality?",
-                      "What is friendship and why do we need it?", "If there is no freewill, should we punish people at all?", "Does freewill exist?"]
+                      "What is friendship and why do we need it?", "If there is no freewill, should we punish people at all?", "Does freewill really exist?"]
 
     @new_question = question_array.sample
   end
