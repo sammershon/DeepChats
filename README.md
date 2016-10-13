@@ -1,5 +1,6 @@
 #DeepChats
 ##Overview
+DeepChats/DeepChatScreenshots/Screen Shot 2016-10-12 at 9.47.50 AM.png
 DeepChats is a chat app built with Ruby on Rails that allows users to create a profile, create chat rooms, and participate in other chat rooms. When a user starts a new room, a random philosophical question is generated. The user is free to use the suggestion, generate a new one, or come up with their own.
 * View the app here: https://deepchats.herokuapp.com/ (Register to start chatting!)
 
@@ -22,6 +23,10 @@ DeepChats is a chat app built with Ruby on Rails that allows users to create a p
 * Users can view randomly generated quotes each time they load the homepage
 
 ##Prototyping
+
+![Wireframe](https://github.com/sammershon/DeepChats/blob/master/DeepChatScreenshots/FrontPage.png)
+![Wireframe](https://github.com/sammershon/DeepChats/blob/master/DeepChatScreenshots/chatProto.png)
+![Wireframe](https://github.com/sammershon/DeepChats/blob/master/DeepChatScreenshots/login:register.png)
 
 ##Future Development
 * Allow users to edit profiles
